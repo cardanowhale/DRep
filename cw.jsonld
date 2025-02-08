@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Cardano Whale",
+    "motivations": "I want Cardano to win.",
+    "objectives": "1. Decentralisation: will always be my top priority. In terms of the tech, but also the culture and in staying non-aligned. I am my own man. No political manoeuvring\n\n2. Scalability and affordability: Cardano must onboard the world, and it has to be for everyone\n\n3. Fiscally cautious, rigid and predictable monetary policy, sustainable: don’t spend beyond our means, the treasury is as much for future generations as it is for ourselves, keep Cardano sustainable, the 45B fixed supply is our base",
+    "paymentAddress": "addr1qytva6qlcszxaylep2cv9c247d5sylhdlchthacuhjqlaklg9t6khcf3y3qm8r2wauacy3ex7ly786mexuaj9pn980rqhfy0y3",
+    "qualifications": "Twitter whale.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Cardano_whale on X",
+        "uri": "https://x.com/cardano_whale"
+      },
+      {
+        "@type": "Identity",
+        "label": "Cardano_whale on X",
+        "uri": "https://x.com/cardano_whale"
+      }
+    ]
+  }
+}
